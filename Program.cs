@@ -6,12 +6,11 @@ namespace dotnet_web_example
     {
         public static void Main(string[] args)
         {
-            var host = new WebHostBuilder()
+            new WebHostBuilder()
                 .UseKestrel()
                 .UseStartup<Startup>()
-                .Build();
-
-            host.Run();
+                .Build()
+                .Run();
         }
     }
 }
