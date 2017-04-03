@@ -3,4 +3,4 @@ obj
 out
 .vs
 Properties
-dotnet-echo-server.csproj.user
+echo.csproj.user
