@@ -1,3 +1,6 @@
 bin
 obj
 out
+.vs
+Properties
+dotnet-web-example.csproj.user
