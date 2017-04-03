@@ -4,17 +4,17 @@
 
 ## Commands
 
-```bat
-:: restore packages
+```sh
+# restore packages
 dotnet restore
 
-:: run app locally
+# run app locally
 dotnet run
 
-:: create release build
+# create release build
 dotnet publish -c release -o out
 
-:: build and run in container
+# build and run in container
 docker build -t echo .
 docker run -p 5000:5000 -it --rm echo
 ```
