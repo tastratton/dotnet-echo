@@ -1,6 +1,6 @@
-# dotnet-web-example
+# dotnet-echo-server
 
-**Barebones .NET example web app.**
+**Barebones .NET echo server.**
 
 ## Commands
 
@@ -12,7 +12,7 @@
 This project was generated using the `dotnet` CLI:
 
 ```
-dotnet new web --framework netcoreapp1.1 --name dotnet-web-example
+dotnet new web --framework netcoreapp1.1 --name dotnet-echo-server
 ```
 
 ## License

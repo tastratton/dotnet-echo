@@ -1,7 +1,7 @@
 ﻿using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 
-namespace dotnet_web_example
+namespace dotnet_echo_server
 {
     public class Program
     {
@@ -14,12 +14,11 @@ namespace dotnet_web_example
                 .Run();
         }
     }
-    
+
     public class Startup
     {
         public void Configure(IApplicationBuilder app)
         {
-            // echo body
             app.Run(async context => {
                 await context.Request.Body
                     .CopyToAsync(context.Response.Body);
