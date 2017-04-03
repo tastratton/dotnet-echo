@@ -9,20 +9,14 @@ namespace dotnet_echo_server
         {
             new WebHostBuilder()
                 .UseKestrel()
-                .UseStartup<Startup>()
+                .Configure(app =>
+                    app.Run(async context =>
+                        await context.Request.Body
+                            .CopyToAsync(context.Response.Body)
+                    )
+                )
                 .Build()
                 .Run();
-        }
-    }
-
-    public class Startup
-    {
-        public void Configure(IApplicationBuilder app)
-        {
-            app.Run(async context => {
-                await context.Request.Body
-                    .CopyToAsync(context.Response.Body);
-            });
         }
     }
 }
