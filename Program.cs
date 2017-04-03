@@ -8,7 +8,6 @@ namespace dotnet_web_example
         {
             var host = new WebHostBuilder()
                 .UseKestrel()
-                .UseIISIntegration()
                 .UseStartup<Startup>()
                 .Build();
 
