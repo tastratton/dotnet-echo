@@ -5,7 +5,7 @@
 ## Commands
 
 - To start the app, run `.\start.ps1` (and open `localhost:5000`)
-- To start the app in a `docker` container, run `.\start-container.ps1`
+- To start the app in a `docker` container, run `.\docker.start.ps1`
 
 ## Miscellaneous
 
