@@ -5,7 +5,7 @@ namespace dotnet_echo_server
 {
     public class Program
     {
-        public static void Main(string[] args)
+        public static void Main()
         {
             new WebHostBuilder()
                 .UseKestrel()
