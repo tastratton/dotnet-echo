@@ -4,8 +4,21 @@
 
 ## Commands
 
-- To start the app, run `.\start.ps1` (and open `localhost:5000`)
-- To start the app in a `docker` container, run `.\docker.start.ps1`
+- To start the app:
+
+```
+dotnet restore
+dotnet run
+```
+
+- To start the app in a `docker` container:
+
+```
+dotnet restore
+dotnet publish -c Release -o out
+docker build -t dotnet-echo-server .
+docker run -p 5000:5000 -it --rm dotnet-echo-server
+```
 
 ## Miscellaneous
 
