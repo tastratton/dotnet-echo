@@ -1,6 +1,8 @@
 # dotnet-echo
 
-**Simplest .NET echo server.**
+**Minimal .NET HTTP echo server.**
+
+This repository is a boilerplate for an as-simple-as-possible .NET HTTP server.
 
 ## Commands
 
