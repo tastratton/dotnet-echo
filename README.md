@@ -17,7 +17,7 @@ dotnet run
 dotnet publish -c release -o out
 
 # build image and run container
-docker build -t echo .
+docker build --rm -t echo .
 docker run -p 5000:5000 -it --rm echo
 ```
 

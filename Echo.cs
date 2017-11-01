@@ -6,7 +6,9 @@ public class Echo
     public static void Main()
     {
         new WebHostBuilder()
-            .UseKestrel()
+            .UseKestrel(options => {
+                options.Limits.MaxConcurrentConnections = 1000;
+            })
             .Configure(app =>
                 app.Run(async context => {
                     var req = context.Request;
