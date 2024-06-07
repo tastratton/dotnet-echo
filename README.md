@@ -23,6 +23,15 @@ docker run -p 5000:5000 -it --rm echo
 
 ## License
 
-[WTFPL](http://www.wtfpl.net/) – Do What the F*ck You Want to Public License.
+This project is a derivative work of https://github.com/MarkTiedemann/dotnet-echo
 
-Made with :heart: by [@MarkTiedemann](https://twitter.com/MarkTiedemannDE).
+It retains the original license terms noted below.
+
+> [WTFPL](http://www.wtfpl.net/) – Do What the F*ck You Want to Public License.
+> 
+> Made with :heart: by [@MarkTiedemann](https://twitter.com/MarkTiedemannDE).
+
+See [CHANGELOG](CHANGELOG.md) for changes.
+
+Note: dockerfile has not been updated for this version as I'm not currently using Docker for this.
+See <https://learn.microsoft.com/en-us/aspnet/core/host-and-deploy/docker/building-net-docker-images?view=aspnetcore-8.0> for updating dockerfile.
