@@ -34,4 +34,3 @@ It retains the original license terms noted below.
 See [CHANGELOG](CHANGELOG.md) for changes.
 
 Note: dockerfile has not been updated for this version as I'm not currently using Docker for this.
-See <https://learn.microsoft.com/en-us/aspnet/core/host-and-deploy/docker/building-net-docker-images?view=aspnetcore-8.0> for updating dockerfile.
